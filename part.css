@@ -1,139 +1,181 @@
-
+/* Styles de base, inchangés */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(255, 255, 255);
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .container {
-    max-width: 330px;
-    margin: auto;
-    background: #0055cc;
-    border-radius: 0px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Header */
-  header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
-  .logo1 {
-    height: 30px;
-    margin: 5%;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .logo2 {
-    height: 35px;
-    margin: 5%;
-  }
-  
-  /* Titre principal */
-  h1 {
-    font-size: 18px;
-    margin-bottom: 50px;
-  }
-  
-  p {
-    margin-bottom: 20px;
-  }
-  
-  .form-header {
-    margin-bottom: 30px;
-    font-weight: bold;
-  }
-  
-  /* Champs de formulaire */
-  .input-group {
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  
-  .input-group i {
-    display: inline-flex;
-    font-size: 20px;
-    color: white;
-    margin-bottom: 0px;
-    text-align:left;
-  }
-  
-  .input-group label {
-    display: inline-flex;
-    color: white;
-    text-align: center;
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-  
-  .input-group input {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-  }
-  
-  .tarif {
-    align-items: center;
-    margin-left: 50px;
-    padding-top: 15px;
-  }
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 330px;
+  margin: auto;
+  background: #0055cc;
+  border-radius: 0px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo1, .logo2 {
+  max-height: 35px;
+  margin: 5%;
+}
+
+/* Titre principal */
+h1 {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.form-header {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Champs de formulaire */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group i {
+  font-size: 20px;
+  color: white;
+  margin-right: 10px;
+}
+
+.input-group label {
+  font-size: 14px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
 
 .t {
-    position: relative;
-    margin: 5%;
+  margin: 5%;
 }
 
 .tval {
-    position: absolute;
-    margin-top: -36px;
-    transform: translateX(120px);
-    display: inline-flex; 
-    align-items: center; 
-    background: linear-gradient(to bottom, rgb(5, 5, 209), rgb(41, 81, 225));
-    color: aliceblue;
-    border: 5px solid white;
-    border-radius:20px;
-    padding: 5px 5px;
-    text-align: center;
-    gap: 3px; 
-}
-    
-.quest {
-    display:block;
-    position: relative;
-    margin: 5%;
+  margin-top: -44px;
+  transform: translateX(4px);
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(to bottom, rgb(5, 5, 209), rgb(41, 81, 225));
+  color: aliceblue;
+  border: 5px solid white;
+  border-radius: 20px;
+  padding: 5px 5px;
+  text-align: center;
+  gap: 5px;
 }
 
-  .no-underline {
-    text-decoration: none !important;
-    color: rgb(255, 255, 255);
+.quest {
+  margin: 5%;
+}
+
+.no-underline {
+  text-decoration: none !important;
+  color: rgb(255, 255, 255);
+}
+
+/* Bouton */
+button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to bottom, rgb(5, 5, 209), rgb(41, 81, 225));
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  background:linear-gradient(to top, rgb(1, 84, 1), rgb(1, 112, 1), rgb(159, 171, 158));
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .logo1, .logo2 {
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .input-group i {
+    font-size: 18px;
+  }
+
+  .input-group label {
+    font-size: 12px;
+  }
+
+  .tval {
+    font-size: 12px;
+    padding: 3px;
   }
 
   button {
-    width: 100%;
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
     padding: 10px;
-    background: linear-gradient(to bottom,rgb(5, 5, 209),rgb(41, 81, 225));
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  }
+
+  h1 {
+    font-size: 14px;
+  }
+
+  .input-group i {
     font-size: 16px;
-    font-weight: bold;
   }
-  
-  button:hover {
-    background: #02a137;
+
+  .input-group input {
+    padding: 8px;
   }
-  
+
+  button {
+    font-size: 12px;
+    padding: 6px;
+  }
+}

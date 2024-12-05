@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sponsorship Form</title>
-  <!-- Lien Font Awesome -->
+  <!-- Lien Font Awesome corrigé -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="part.css">
 </head>
@@ -12,7 +12,7 @@
   <div class="container">
     <header>
       <img src="o.jpeg" alt="IUT Logo" class="logo1">
-      <img src="logo gi.jpg"Department Logo" class="logo2">
+      <img src="logo gi.jpg" alt="Department Logo" class="logo2">
     </header>
     <!-- Texte principal -->
     <h1>SPONSORSHIP OF THE COMPUTER ENGINEERING DEPARTMENT 20/24-2025</h1>
@@ -22,36 +22,32 @@
       <p class="form-header">Enter your informations please</p>
       <!-- Username -->
       <div class="input-group">
-        <i class="fa-thin fa-user"></i>
+        <i class="fas fa-user"></i>
         <label for="username">UserName</label>
-        <input type="text" id="username" name="username" required>
+        <input type="text" id="username" name="username" placeholder="Votre nom et prenom "  required>
       </div>
       <!-- Email -->
       <div class="input-group">
-        <i class="fa-thin fa-envelope"></i>
+        <i class="fas fa-envelope"></i>
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" placeholder="Entrer votre adresse mail "  required>
       </div>
       <!-- Matricule -->
       <div class="input-group">
-        <i class="fa-thin fa-key"></i>
+        <i class="fas fa-key"></i>
         <label for="matricule">Matricule</label>
-        <input type="text" id="matricule" name="matricule" required>
-         <!-- Tarif -->
-      <div class="tarif">
-        <p class="t"> TARIF : </p>
+        <input type="text" id="matricule" name="matricule" placeholder="Entrer votre matricule " required>
       </div>
-        <div class="tval">
-            <i class="fa-thin fa-money-bill"></i>2000 Fcfa
-        </div>
+      <!-- Tarif -->
+      <div class="tval">
+        <i class="fas fa-coins"></i> TARIF : 2000 Fcfa
       </div>
-       <div class="quest">
-           <a href="raison" class="no-underline">Pourquoi ce Tarif ?</a>
-       </div>
+      <!-- Lien explicatif -->
+      <div class="quest">
+        <a href="raison" class="no-underline">Pourquoi ce Tarif ?</a>
+      </div>
       <!-- Bouton -->
       <button type="submit">Sign up</button>
-      </div>
-     
     </form>
   </div>
 </body>
